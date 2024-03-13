@@ -1,0 +1,5 @@
+<html>
+<head><title>Blissful Moments-Gallery</title>
+</head>
+<body><h1>Blissful Gallery<h2></body>
+</html>
