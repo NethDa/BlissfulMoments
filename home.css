@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+	width: 97%; 
+	position: fixed; 
+	top: 0;
+	left: 0; 
+	z-index: 1000; 
+}
+
+
+
+.logo img {
+    height: 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input {
+    margin-right: 10px;
+}
+
+.cta-button .button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button .button:hover {
+  background-color: #444;
+}
+
+
+
+  
+  .center-content {
+  
+}
+
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	bottom: 0;
+	width: auto;
+  }
+  
+  .footer-note {
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: auto;
+  }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content div {
+    width: 25%;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: left;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; /* Adjust as needed */
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 500px; /* Same as slider height */
+  background-size: cover;
+  background-position: center;
+}
+h2.a {
+  font-family: "Ballet", sans-serif; font-size:98px;
+}
+p.b {
+  font-family: "Sofia", sans-serif;
+}
+
+
+main h2 {
+	  position: absolute;
+	  bottom: 150px; /* Adjust as needed */
+	  left: 20px; /* Adjust as needed */
+	  color: white;
+	  background-color:rgba(0, 0.5, 0.25, 0.5); /* Semi-transparent background */
+	  padding: 20px;
+	  border-radius: 5px;
+	  font-size: 98px; /* Size of the heading */
+	  font-weight: bold; /* Make the heading bold */
+	  text-align: right; /* Center the heading */
+	  text-transform: sentence-case; /* Uppercase letters for styling */
+	  margin-bottom: 50px; /* Space below the heading */
+	  margin-top:10px;
+	  margin-left:480px;
+	  z-index:100;
+}
+
+
+main p{
+	  position: absolute;
+	  bottom: 200px; /* Adjust as needed */
+	  left: 200px; /* Adjust as needed */
+	  color: white;
+	  padding: 10px;
+	  border-radius: 5px;
+	  font-size: 20px; /* Size of the heading */
+	  font-weight: italic; /* Make the heading bold */
+	  text-align: right; /* Center the heading */
+	  color: white; /* Color of the heading */
+	  text-transform: lowercase; /* Uppercase letters for styling */
+	  margin-top: 20px; /* Space below the heading */
+	  margin-left:480px;
+}
+
+
+/* Add background images for each slide */
+#slide-1 { background-image: url('party.jpg'); }
+#slide-2 { background-image: url('couple.jpg'); }
+#slide-3 { background-image: url('outdoor.jpg'); }
+}
+
+  .menu li a:hover {
+    background-color: #fff;
+  }
+  #about {
+    padding: 50px;
+    text-align: center;
+	margin-top:15px;
+  }
+  
+  #show {
+  display: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 15px;
+}
+
+#services{
+	padding: 50px;
+	text-align: center;
+}
+
+#contact{
+	padding: 50px;
+	text-align: center;
+	
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+	

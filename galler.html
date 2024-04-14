@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blissful Moments-Gallery</title>
+    <!-- CSS file here -->
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+    <header>
+	<!-- Sidebar -->
+	<div id="mySidebar" class="sidebar">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		  <a href="#">About Us</a>
+		  <a href="#">Services</a>
+		  <a href="#">Gallery</a>
+		  <a href="#">Contact</a>
+	</div>
+
+	<div id="main">
+		<button class="openbtn" onclick="openNav()">☰</button>  
+	</div>
+	
+	<!-- Logo image -->
+        <div class="logo">
+			<a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/home.html#">
+			<img src="logo.png" alt="Logo" style="width:125px;height:75px;">
+			</a>
+
+        </div>
+	<!-- Menu bar-->
+        <nav class="menu">
+            <ul>
+                <li><a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/home.html#">Home</a></li>
+                <li><a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/home.html#about">About</a></li>
+                <li><a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/services.html">Services</a></li>
+                <li><a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/galler.html">Gallery</a></li>
+				<li><a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+	<!-- E-mail-->
+        <div class="cta-button">
+            <!-- Replace with your call to action -->
+            <a href="#" class="button">E-mail</a>
+        </div>
+		
+    </header>
+		<div class="gallery">
+		  <div class="gallery-item">
+			<img src="party.jpg" alt="Description 1">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="outdoor.jpg" alt="Description 2">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="couple.jpg" alt="Description 3">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="party.jpg" alt="Description 1">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="outdoor.jpg" alt="Description 2">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="couple.jpg" alt="Description 3">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="party.jpg" alt="Description 1">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="outdoor.jpg" alt="Description 2">
+		  </div>
+		  
+		  <div class="gallery-item">
+			<img src="couple.jpg" alt="Description 3">
+		  </div>
+		<!-- Add more images as needed -->
+		</div>
+	
+	<!-- Footer of the website goes here -->
+		<footer>
+		<div class="footer-content">
+			<div class="legal">
+				<h3>Legal</h3>
+				<ul>
+					<li><a href="#">Privacy & Terms</a></li>
+					<li><a href="#">Legal Information</a></li>
+				</ul>
+			</div>
+			<div class="company">
+				<h3>Company</h3>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="contact">
+				<h3>Contact</h3>
+				<ul>
+					<li><a href="#">Contact Information</a></li>
+				</ul>
+			</div>
+			<div class="navigation">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<section>
+		<div class= "footer-note">
+			&copy; 2024 BlissfulMoments. All rights reserved.
+		</div>
+		</section>
+		
+		
+		<script>
+	<!-- Sidebar navigation-open button-->
+		function openNav() {
+			document.getElementById("mySidebar").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+	<!-- Sidebar navigation-close button-->
+		function closeNav() {
+			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+		}
+		</script>
+	
+	</html>

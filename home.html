@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Blissful Moments</title>
+    <!-- CSS file here -->
+    <link rel="stylesheet" type="text/css" href="home.css" >
+	<link href="https://fonts.googleapis.com/css?family=Ballet" rel="stylesheet">
+</head>
+<body>
+    <header>
+	<!-- Sidebar -->
+	<div id="mySidebar" class="sidebar">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		  <a href="#">About Us</a>
+		  <a href="#">Services</a>
+		  <a href="#">Gallery</a>
+		  <a href="#">Contact</a>
+	</div>
+
+	<div id="main">
+		<button class="openbtn" onclick="openNav()">☰</button>  
+	</div>
+	
+	<!-- Logo image -->
+        <div class="logo">
+			<a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/home.html#">
+			<img src="logo.png" alt="Logo" style="width:125px;height:75px;">
+			</a>
+
+        </div>
+	<!-- Menu bar-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/galler.html">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+		
+	<!-- search-bar-->
+		<!-- Search form -->
+<form action="/search" method="get">
+  <input type="text" id="search-bar" name="query" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+	<!-- E-mail-->
+        <div class="cta-button">
+            <!-- Replace with your call to action -->
+            <a href="#" class="button">E-mail</a>
+        </div>
+		
+    </header>
+	
+	<main>
+		 <!-- main content of the website goes here -->
+			<!-- images of slider -->
+		<div class="slider">
+			<div class="slides">
+				<div class="slide" id="slide-1">Slide 1</div>
+				<div class="slide" id="slide-2">Slide 2</div>
+				<div class="slide" id="slide-3">Slide 3</div>
+			</div>
+		</div>
+		<div class="text">
+		  <h2 class="a"> Blissful Moments</h2>
+		  <p class="b">
+		  <br><br><br>
+		  We make exclusive events and priceless memories!</p>
+		</div>
+	</main>
+	
+	<!-- about us section -->
+	<section id="about">
+		
+		<h2>About Us</h2>
+		
+		<button id="toggleButton" onclick="toggleAbout()">Hide>></button>
+		<div id="Show">
+		<p>Welcome to our website! Here you can learn more about our mission, vision, and the values that drive us.</p>
+		</div>
+		
+	</section>
+	
+	<!-- services section -->
+	<section id="services">
+		
+		<h2>Services</h2>
+		
+		<a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/services.html">
+		<button type="button">Explore</button>
+		</a>
+		
+		<p>Welcome to our website! Here you can learn more about our mission, vision, and the values that drive us.</p>
+		
+	</section>
+	
+	<!-- contact us section -->
+	<section id="contact">
+		
+		<h2>Contact</h2>
+		
+		<a href="file:///C:/Users/NETHMINI/Desktop/New%20folder/contact.html">
+		<button type="button">Explore</button>
+		</a>
+		<p>Welcome to our website! Here you can learn more about our mission, vision, and the values that drive us.</p>
+		
+	</section>
+	
+	
+    <!-- Rest of the website goes here -->
+	<footer>
+    <div class="footer-content">
+        <div class="legal">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy & Terms</a></li>
+                <li><a href="#">Legal Information</a></li>
+            </ul>
+        </div>
+        <div class="company">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">Contact Information</a></li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+	<section>
+	<div class= "footer-note">
+		&copy; 2024 BlissfulMoments. All rights reserved.
+	</div>
+	</section>
+</footer>
+
+
+	<script>
+	<!-- Sidebar navigation-open button-->
+		function openNav() {
+			document.getElementById("mySidebar").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+		}
+	<!-- Sidebar navigation-close button-->
+		function closeNav() {
+			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+		}
+	<!-- Slider-->	
+		let currentSlide = 1;
+			const slides = document.querySelector('.slides');
+			const totalSlides = document.querySelectorAll('.slide').length;
+
+			function goToSlide(slideNumber) {
+			  slides.style.transform = `translateX(-${(slideNumber - 1) * 100}%)`;
+			  currentSlide = slideNumber;
+			}
+
+			function nextSlide() {
+			  currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+			  goToSlide(currentSlide);
+			}
+
+			// Set the interval for the slider to change every 3 seconds (3000 milliseconds)
+			setInterval(nextSlide, 3000);
+
+
+
+	<!--contact- call on button-->		
+		function toggleAbout() {
+		var x = document.getElementById("Show");
+		var btn = document.getElementById("toggleButton");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+			btn.textContent = "Hide>>";
+		} else {
+			x.style.display = "none";
+			btn.textContent = "Show>>";
+		}
+		
+		
+			<!--search bar-->	
+		document.querySelector('form').onsubmit = function(event) {
+  event.preventDefault(); // Prevent the form from submitting the traditional way
+  var query = document.getElementById('search-bar').value;
+  console.log('Search query:', query);
+  // Add logic to perform the search and display results
+};
+	</script>
+	
+	
+	
+</body>
+</html>
